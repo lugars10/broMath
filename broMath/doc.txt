@@ -1,0 +1,24 @@
+Funcionamiento de resolución de problemas:
+
+1.  División de string "equation" en Array de "math frames" 
+        Descriptio "math frames":
+        Un mathFrame es cualquier elemento que conforma a una ecuación u operación, estos
+        pueden clasificarse en distintos tipos que el Lexer reconoce, se enlistan en dos:
+        - number: Cualquier número (1, 2, 3.1415, 1.8, -5)
+        - operator: Cualquier signo matemático que realice operación (+, - , (, ), *, /, ^)
+    !!!!NOTA!!!: En este punto, solo se ha hecho división de elementos, aún no se categorizan.
+
+2.  Clasificación de los "math frames" en las categorías previamente descritas.
+3.  
+
+---
+
+Frames:
+Funciona como una array doble (diccionario) en la que se pueden repetir keys y values cuantas veces
+se desee, y aun así, es posible obtener llaves y valores teniendo únicamente el índice del elemento
+deseado. Esto significa que un objeto tipo Frames, en realidad actúa como array triple, pues considera
+tres elementos: index, key, value
+
+
+//0.02256518256
+//0.0176448134
